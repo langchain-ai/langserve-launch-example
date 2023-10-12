@@ -155,3 +155,4 @@ data_map*
 # Replit files
 *replit*
 
+.env.gcp.yaml

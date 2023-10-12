@@ -57,6 +57,15 @@ docker run -p 8001:8001 -e PORT=8001 langserve_launch_example:latest
 
 Don't forget to add any needed environment variables!
 
+## Deploy to GCP
+
+You can deploy to GCP Cloud Run using the following command:
+
+First create a `.env.gcp.yaml` file with the contents from `.env.gcp.yaml.example` and fill in the values. Then run:
+
+```
+make deploy_gcp
+```
 
 ## Contributing
 

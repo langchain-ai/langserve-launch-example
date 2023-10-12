@@ -3,12 +3,12 @@ from langserve import add_routes
 
 from langserve_launch_example.chain import get_chain
 
-app = FastAPI()
+app = FastAPI(title="LangServe Launch Example")
 
 add_routes(
     app,
     get_chain(),
-    config_keys=["tags"],
+    config_keys=["tags", "metadata"],
 )
 
 if __name__ == "__main__":
