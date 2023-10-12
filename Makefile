@@ -39,3 +39,4 @@ help:
 	@echo 'make format                       - run code formatters'
 	@echo 'make lint                         - run linters'
 	@echo 'make test                         - run unit tests'
+	@echo 'make deploy_gcp                   - deploy to GCP'

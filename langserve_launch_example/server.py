@@ -5,11 +5,7 @@ from langserve_launch_example.chain import get_chain
 
 app = FastAPI(title="LangServe Launch Example")
 
-add_routes(
-    app,
-    get_chain(),
-    config_keys=["tags", "metadata"],
-)
+add_routes(app, get_chain())
 
 if __name__ == "__main__":
     import uvicorn
