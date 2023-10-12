@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  server:
+    build:
+      context: .
+    image: langserve_launch_example:latest
+    container_name: langserve_launch_example
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
