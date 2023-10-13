@@ -27,6 +27,12 @@ pip install .
 
 ## Usage
 
+By default, this uses OpenAI. So you will need to set your OpenAI API key:
+
+```
+export OPENAI_API_KEY="sk-..."
+```
+
 To run the project locally, run
 
 ```
