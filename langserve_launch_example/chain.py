@@ -27,7 +27,7 @@ joke_func = {
 
 def get_chain() -> Runnable:
     """Return a chain."""
+    prompt = ChatPromptTemplate.from_template("tell me a joke about {topic}")
     model = ChatOpenAI().bind(functions=[joke_func], function_call={"name": "joke"})
-    prompt = ChatPromptTemplate.from_template("tell me a joke about {foo}")
     parser = JsonOutputFunctionsParser()
     return prompt | model | parser

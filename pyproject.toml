@@ -9,7 +9,7 @@ packages = [{include = "langserve_launch_example"}]
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
-langchain = "^0.0.312"
+langchain = "^0.0.313"
 langserve = { version = ">=0.0.6", extras = ["server"] }
 tiktoken = "^0.4.0"
 openai = "^0.27.8"
