@@ -1,3 +1,9 @@
-.venv
+##Git
 .github
 .git
+
+##Environmental
+.env
+.env*
+
+.venv
