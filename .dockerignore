@@ -1,0 +1,11 @@
+##Git
+.github
+.git
+
+##Environmental
+.env
+.env*
+
+.venv
+.mypy_cache
+.ruff_cache
