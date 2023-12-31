@@ -4,6 +4,9 @@ WORKDIR /app
 
 COPY . /app
 
+ARG PORT
+ENV PORT=$PORT
+
 RUN pip install poetry && \
   poetry config virtualenvs.create false && \
   poetry install --no-interaction --no-ansi --only main

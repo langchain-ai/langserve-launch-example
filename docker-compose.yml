@@ -4,6 +4,8 @@ services:
   server:
     build:
       context: .
+      args:
+        - PORT=${PORT}
     image: langserve_launch_example:latest
     container_name: langserve_launch_example
     ports:
