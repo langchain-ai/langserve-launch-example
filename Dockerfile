@@ -6,7 +6,7 @@ WORKDIR /app
 COPY pyproject.toml poetry.lock ./
 
 # Install poetry and dependencies
-RUN pip install poetry langchainhub python-dotenv && \
+RUN pip install poetry && \
     poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi --only main
 
